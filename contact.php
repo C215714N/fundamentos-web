@@ -6,8 +6,7 @@
 	$mensaje  = "
 		<strong> Nombre: </strong> $nombre <br/>
 		<strong> Correo: </strong> $email <br/>
-		<strong> Consulta: </strong> $consulta
-	";	
+		<strong> Consulta: </strong> $consulta";	
 	mail(
 		"CristianDRacedo@hotmail.com",
 		$tipo,	
@@ -17,6 +16,4 @@
 		\n Content-Type: text/html;
 		\n charset=utf-8"
 	);
-	header(
-		"location: https://c215714n.github.io/EducacionIT"
-	);
+	header( "location: https://c215714n.github.io/EducacionIT" );
