@@ -1,238 +1,271 @@
 /*Formato General*/
-	*{ font-family: "century gothic", "segoe ui", sans-serif }
-	body, h1, h2, h3,
-	.menu, .index dd{ 
-		margin:0; 
-		padding: 0; 
+	* {
+		font-family: "century gothic", "segoe ui", sans-serif;
 	}
-	.sub{ margin:-5px 0 0 }
-	hr{ border: 1px solid #dedede }
-	a{ 
-		color: #124; 
-		text-decoration: none 
+	body,
+	h1,
+	h2,
+	h3,
+	.menu,
+	.index dd {
+		margin: 0;
+		padding: 0;
+	}
+	.sub {
+		margin: -0.5rem 0 0;
+	}
+	hr {
+		border: 1px solid #dedede;
+	}
+	a {
+		color: #124;
+		text-decoration: none;
 	}
 /*Encabezado y Pie de Pagina*/
-	#header, 
-	#footer{
+	#header,
+	#footer {
 		padding-top: 20px;
 		color: #ccd;
 		background-color: #124;
 		text-align: center;
 	}
-	#footer, #footer p{ padding: 5px 0 }
-	#footer iframe{
+	#footer,
+	#footer p {
+		padding: .5rem 0;
+	}
+	#footer iframe {
 		width: 100%;
 		min-height: 240px;
-		border:none;
+		border: none;
 	}
-	#footer a{
-		color:#ccc;
+	#footer a {
+		color: #ccc;
 		font-weight: bold;
 	}
 /*Barra de Navegacion*/
-	nav{
+	nav {
 		max-height: 50px;
 		margin: 10px 0;
-		padding: 5px 10px 0;
+		padding: .5rem 10px 0;
 		background-color: #ccd;
 		overflow: hidden;
 	}
-	.menu li{
+	.menu li {
 		display: inline-block;
 		padding: 10px;
 		border-radius: 10px 10px 0 0;
 		line-height: 30px;
-	}	
-	.menu li:hover, 
-	.active{
+	}
+	.menu li:hover,
+	.active {
 		opacity: 1;
 		background-color: white;
 	}
-/*Tabla de Contenidos*/
-	.index{
+	/*Tabla de Contenidos*/
+	.index {
 		max-width: 380px;
-		margin: 0 auto 2.5%;
-		border-radius: 15px;
-		box-shadow: 5px 5px 10px #ccc, 
-					2.5px 2.5px 10px #ccc inset;
+		margin: 0 auto 1rem;
+		border-radius: 1rem;
+		box-shadow: 5px 5px 10px #ccc, 2.5px 2.5px 10px #ccc inset;
 		padding: 12.5px;
 		text-align: left;
 		list-style: none;
 	}
-	.index dt{
+	.index dt {
 		margin: 5px -20px;
-		padding: 5px 20px;
+		padding: .5rem 20px;
 		color: #dedede;
 		background-color: #124;
 		font-weight: bold;
 		font-size: 24px;
 	}
-	.index dd{ 
+	.index dd {
 		border-radius: 5px;
-		padding: 2.5px 25px; 
+		padding: 2.5px 25px;
 	}
-	.index dd:hover{ background-color: #ccd }
+	.index dd:hover {
+		background-color: #ccd;
+	}
 /*Menu Principal*/
-	article .index-back{
+	article .index-back {
 		float: right;
 		height: 30px;
 		margin: 0 20px;
 		padding: 10px;
-		opacity: .25;
+		opacity: 0.25;
 	}
-	article .index-back:hover, 
-	.link:hover{
-		width:50px;
-		height:50px;
+	article .index-back:hover,
+	.link:hover {
+		width: 50px;
+		height: 50px;
 		padding: 0;
-		opacity:1;
+		opacity: 1;
 	}
-	.link{
+	.link {
 		display: block;
-		width:30px;
-		height:30px;
+		width: 30px;
+		height: 30px;
 		margin: auto;
-		padding:10px;
+		padding: 10px;
 	}
-	.link .index-back{
-		width:20px;
+	.link .index-back {
+		width: 20px;
 		border-radius: 32px;
-		padding:5px;
-		opacity: .5;
+		padding: .5rem;
+		opacity: 0.5;
 	}
-	.link:hover .index-back{
-		width:45px;
+	.link:hover .index-back {
+		width: 45px;
 		box-shadow: 0 0 8px #ccc;
 		opacity: 1;
 	}
 /*Contenido Principal*/
-	main{
-		max-width: 1360px;
+	main {
+		max-width: 1320px;
 		margin: auto;
-		padding: 2rem;
+		padding: 1rem;
 		text-align: center;
 	}
-	main header{ padding: 5px 0 }
-	article{
+	main header {
+		padding: .5rem 0;
+	}
+	article {
 		display: none;
 		margin: 8px auto;
 		border-radius: 15px;
-		padding: 0 0 20px;
-		box-shadow: 0 0 20px grey;
-		opacity: .95;
+		padding: 0 0 1.5rem;
+		box-shadow: 0 0 .5rem grey;
+		opacity: 0.95;
 		overflow: hidden;
 	}
 	section,
-	article{ padding: 8px 0 }
-	article:target{ display: block }
+	article {
+		padding: .5rem 0;
+	}
+	article:target {
+		display: block;
+	}
 /*Secciones de Contenido*/
-	section h2, 
-	section h3, 
-	main .sub{
-		padding: 5px;
+	section h2,
+	section h3,
+	main .sub {
+		padding: .5rem;
 		color: #ccd;
 		background-color: #124;
 		text-align: left;
 	}
-	main h2{ padding: 10px 2.5% 0 }
-	main section{ padding: 10px 0 }
-	section h2, 
-	section .sub{ padding-left: 10px }
-	article > header{ padding-left:50px }
-	section > p{
+	main h2 {
+		padding: 10px 2.5% 0;
+	}
+	main section {
+		padding: 10px 0;
+	}
+	section h2,
+	section h3,
+	section .sub {
+		padding-left: 10px;
+	}
+	section > p {
 		width: 95%;
 		margin: 12px auto;
-		text-align: justify;
+		word-break: normal;
+		text-align: left;
 	}
-	section h4{
+	section h4 {
 		margin: 0;
 		padding: 2px 0;
 		border-bottom: 2px solid #124;
 	}
-	section .logo{ width: 30px }
+	section .logo {
+		width: 30px;
+	}
 /*Articulos de Definicion*/
-	.article{
+	.article {
 		display: inline-block;
 		max-width: 365px;
 		margin: 4px;
 		border-radius: 10px;
-		padding: 10px;		
+		padding: .5rem;
 		background-color: #dde;
 		text-align: justify;
 	}
-	.article:hover{ box-shadow: 0 0 16px grey inset }
-	.article audio, 
+	.article:hover {
+		box-shadow: 0 0 16px grey inset;
+	}
+	.article audio,
 	.article embed,
 	.article img,
-	.article video, 
-	.article iframe{
-		width:100%;
+	.article video,
+	.article iframe {
+		width: 100%;
 		outline: none;
-		border-radius: 5px;
+		border-radius: 0.25rem;
 	}
-	.article p{	margin-top:8px }
-	.article audio{ border-radius: 32px }
+	.article audio {
+		border-radius: 2rem;
+	}
 /*Formulario de Contacto*/
-	#contacto{
+	#contacto {
 		width: 90%;
-		text-align: left;
-		max-width: 420px;
-		padding: 4px;
+		max-width: 540px;
+		padding: 0.5rem;
 		margin: auto;
-		padding: 20px 0 5px;
+		padding: 1.25rem 0 0.5rem;
+		text-align: left;
 	}
-	#contacto label, 
-	#contacto input, 
-	#contacto textarea, 
-	#contacto select{
-		width: calc(100% - 20px);
-		margin: 5px 0;
+	#contacto input,
+	#contacto textarea,
+	#contacto select {
+		width: calc(100% - 1rem);
+		margin: 0.25rem 0;
 		outline: none;
 		border: 0;
 		border-radius: 8px;
-		padding: 10px;
+		padding: 0.5rem;
 		resize: none;
-		font-weight: bold;	
-		font-size: 16px;
+		font-weight: bold;
+		font-size: 1rem;
 	}
-	#contacto label{ display: none }
-	#contacto select{ width: 100% }
-	#contacto textarea{
+	#contacto label {
+		display: none;
+	}
+	#contacto select {
+		width: 100%;
+	}
+	#contacto textarea {
 		height: 80px;
 		margin-bottom: 0;
 		border-radius: 8px 8px 0 0;
 	}
-	#contacto button{
+	#contacto button {
 		width: 100%;
 		margin: -5px auto 10px;
 		border: 2px solid #ccc;
 		border-radius: 0 0 8px 8px;
-		padding: 5px;
+		padding: .5rem;
 		color: #124;
 		background-color: #ccd;
-		font-weight: bold;	
+		font-weight: bold;
 		font-size: 16px;
 	}
-	#contacto button:hover{
-		color:#ccc;
-		background-color:#124;
+	#contacto button:hover {
+		color: #ccc;
+		background-color: #124;
 	}
 /*Redes Sociales*/
-	.social-media{
-		max-height: 50px;
+	.social-media {
 		background-color: #ccd;
 		text-align: center;
-		overflow: hidden;
 	}
-	.social-media img{
+	.social-media img {
 		height: 20px;
 		padding: 15px;
-		opacity: .5;
+		opacity: 0.5;
 	}
-	.social-media a:hover img{
+	.social-media a:hover img {
 		height: 40px;
-		border-radius: 7.5px;
-		padding: 5px;
+		border-radius: 0.5rem;
+		padding: .5rem;
 		opacity: 1;
 	}
 /*Autor: Cristian Racedo*/
