@@ -6,6 +6,7 @@
 	h1,
 	h2,
 	h3,
+	h4,
 	.menu,
 	.index dd {
 		margin: 0;
@@ -29,8 +30,7 @@
 		background-color: #124;
 		text-align: center;
 	}
-	#footer,
-	#footer p {
+	#footer{
 		padding: .5rem 0;
 	}
 	#footer iframe {
@@ -132,7 +132,7 @@
 	article {
 		display: none;
 		margin: 8px auto;
-		border-radius: 15px;
+		border-radius: 1rem;
 		padding: 0 0 1.5rem;
 		box-shadow: 0 0 .5rem grey;
 		opacity: 0.95;
@@ -160,11 +160,6 @@
 	main section {
 		padding: 10px 0;
 	}
-	section h2,
-	section h3,
-	section .sub {
-		padding-left: 10px;
-	}
 	section > p {
 		width: 95%;
 		margin: 12px auto;
@@ -172,7 +167,6 @@
 		text-align: left;
 	}
 	section h4 {
-		margin: 0;
 		padding: 2px 0;
 		border-bottom: 2px solid #124;
 	}
@@ -183,72 +177,68 @@
 	.article {
 		display: inline-block;
 		max-width: 365px;
-		margin: 4px;
+		margin: .25rem;
 		border-radius: 10px;
-		padding: .5rem;
+		padding: 1rem;
 		background-color: #dde;
-		text-align: justify;
+		text-align: left;
 	}
 	.article:hover {
 		box-shadow: 0 0 16px grey inset;
 	}
-	.article audio,
-	.article embed,
-	.article img,
-	.article video,
-	.article iframe {
+	.article .example {
 		width: 100%;
+		min-height: 205px;
 		outline: none;
-		border-radius: 0.25rem;
+		border-radius: .25rem;
+		filter: drop-shadow(0 0 .5rem #666);
 	}
-	.article audio {
-		border-radius: 2rem;
+	.article audio.example {
+		min-height: 0;
 	}
 /*Formulario de Contacto*/
-	#contacto {
+	#contact {
 		width: 90%;
 		max-width: 540px;
-		padding: 0.5rem;
+		padding: .5rem;
 		margin: auto;
-		padding: 1.25rem 0 0.5rem;
+		padding: 1.5rem 0;
 		text-align: left;
 	}
-	#contacto input,
-	#contacto textarea,
-	#contacto select {
+	#contact input,
+	#contact textarea,
+	#contact select {
 		width: calc(100% - 1rem);
-		margin: 0.25rem 0;
+		margin: .25rem 0;
 		outline: none;
 		border: 0;
-		border-radius: 8px;
-		padding: 0.5rem;
-		resize: none;
+		border-radius: .25rem;
+		padding: .5rem;
 		font-weight: bold;
 		font-size: 1rem;
 	}
-	#contacto label {
+	#contact label {
 		display: none;
 	}
-	#contacto select {
+	#contact select {
 		width: 100%;
 	}
-	#contacto textarea {
-		height: 80px;
-		margin-bottom: 0;
-		border-radius: 8px 8px 0 0;
+	#contact textarea {
+		border-radius: .5rem .5rem 0 0;
+		resize: vertical;
 	}
-	#contacto button {
+	#contact button {
 		width: 100%;
-		margin: -5px auto 10px;
+		margin: -.6rem auto;
 		border: 2px solid #ccc;
-		border-radius: 0 0 8px 8px;
+		border-radius: 0 0 .5rem .5rem;
 		padding: .5rem;
 		color: #124;
 		background-color: #ccd;
 		font-weight: bold;
 		font-size: 16px;
 	}
-	#contacto button:hover {
+	#contact button:hover {
 		color: #ccc;
 		background-color: #124;
 	}
@@ -258,13 +248,12 @@
 		text-align: center;
 	}
 	.social-media img {
-		height: 20px;
-		padding: 15px;
-		opacity: 0.5;
+		height: 2rem;
+		padding: 1rem;
+		opacity: .35;
 	}
 	.social-media a:hover img {
-		height: 40px;
-		border-radius: 0.5rem;
+		height: 3rem;
 		padding: .5rem;
 		opacity: 1;
 	}
