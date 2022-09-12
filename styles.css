@@ -1,19 +1,19 @@
 /*Formato General*/
 	* {
 		font-family: "century gothic", "segoe ui", sans-serif;
+		scroll-behavior: smooth;
 	}
 	body,
 	h1,
 	h2,
 	h3,
 	h4,
+	section > p,
 	.menu,
-	.index dd {
+	.index dd,
+	.sub {
 		margin: 0;
 		padding: 0;
-	}
-	.sub {
-		margin: -0.5rem 0 0;
 	}
 	hr {
 		border: 1px solid #dedede;
@@ -25,7 +25,7 @@
 /*Encabezado y Pie de Pagina*/
 	#header,
 	#footer {
-		padding-top: 20px;
+		padding-top: 1.5rem;
 		color: #ccd;
 		background-color: #124;
 		text-align: center;
@@ -44,17 +44,17 @@
 	}
 /*Barra de Navegacion*/
 	nav {
-		max-height: 50px;
+		max-height: 3rem;
 		margin: 10px 0;
-		padding: .5rem 10px 0;
+		padding: .5rem .5rem 0;
 		background-color: #ccd;
 		overflow: hidden;
 	}
 	.menu li {
 		display: inline-block;
-		padding: 10px;
-		border-radius: 10px 10px 0 0;
-		line-height: 30px;
+		padding: .5rem 1rem;
+		border-radius: .5rem .5rem 0 0;
+		line-height: 2rem;
 	}
 	.menu li:hover,
 	.active {
@@ -68,54 +68,51 @@
 		border-radius: 1rem;
 		box-shadow: 5px 5px 10px #ccc, 2.5px 2.5px 10px #ccc inset;
 		padding: 12.5px;
-		text-align: left;
 		list-style: none;
 	}
 	.index dt {
-		margin: 5px -20px;
-		padding: .5rem 20px;
+		margin: .25rem -1.5rem;
+		border-radius: .25rem;
+		padding: .5rem 1.5rem;
 		color: #dedede;
 		background-color: #124;
 		font-weight: bold;
-		font-size: 24px;
+		font-size: 1.5rem;
 	}
 	.index dd {
-		border-radius: 5px;
-		padding: 2.5px 25px;
+		border-radius: .25rem;
+		padding: .25rem .5rem;
 	}
 	.index dd:hover {
 		background-color: #ccd;
 	}
 /*Menu Principal*/
 	article .index-back {
-		float: right;
-		height: 30px;
-		margin: 0 20px;
-		padding: 10px;
+		width: 2rem;
+		padding: .5rem;
 		opacity: 0.25;
 	}
 	article .index-back:hover,
 	.link:hover {
-		width: 50px;
-		height: 50px;
+		width: 3rem;
 		padding: 0;
 		opacity: 1;
 	}
 	.link {
 		display: block;
-		width: 30px;
-		height: 30px;
+		width: 3rem;
+		height: 3rem;
 		margin: auto;
-		padding: 10px;
 	}
 	.link .index-back {
-		width: 20px;
-		border-radius: 32px;
+		width: 2rem;
+		border-radius: 2rem;
 		padding: .5rem;
 		opacity: 0.5;
 	}
 	.link:hover .index-back {
-		width: 45px;
+		width: 3rem;
+		padding: 0;
 		box-shadow: 0 0 8px #ccc;
 		opacity: 1;
 	}
@@ -124,64 +121,53 @@
 		max-width: 1320px;
 		margin: auto;
 		padding: 1rem;
-		text-align: center;
-	}
-	main header {
-		padding: .5rem 0;
 	}
 	article {
 		display: none;
-		margin: 8px auto;
+		margin: .5rem auto;
 		border-radius: 1rem;
 		padding: 0 0 1.5rem;
 		box-shadow: 0 0 .5rem grey;
 		opacity: 0.95;
 		overflow: hidden;
 	}
+	article > header{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
 	section,
 	article {
-		padding: .5rem 0;
+		padding: 1rem;
 	}
 	article:target {
 		display: block;
 	}
 /*Secciones de Contenido*/
-	section h2,
-	section h3,
-	main .sub {
-		padding: .5rem;
-		color: #ccd;
-		background-color: #124;
-		text-align: left;
-	}
-	main h2 {
-		padding: 10px 2.5% 0;
-	}
 	main section {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: .5rem;
 		padding: 10px 0;
 	}
-	section > p {
-		width: 95%;
-		margin: 12px auto;
-		word-break: normal;
-		text-align: left;
+	section .header {
+		width: 100%;
+		margin: 0 -1rem;
+		padding: .5rem 1rem;
+		color: #ccd;
+		background-color: #124;
 	}
 	section h4 {
-		padding: 2px 0;
 		border-bottom: 2px solid #124;
-	}
-	section .logo {
-		width: 30px;
 	}
 /*Articulos de Definicion*/
 	.article {
-		display: inline-block;
-		max-width: 365px;
-		margin: .25rem;
-		border-radius: 10px;
+		flex: 1 0 min(90%, 240px);
+		border-radius: .5rem;
 		padding: 1rem;
 		background-color: #dde;
-		text-align: left;
 	}
 	.article:hover {
 		box-shadow: 0 0 16px grey inset;
@@ -198,45 +184,39 @@
 	}
 /*Formulario de Contacto*/
 	#contact {
-		width: 90%;
 		max-width: 540px;
-		padding: .5rem;
+		display: flex;
+		flex-direction: column;
+		gap: .5rem;
+		padding: 1.5rem 1rem;
 		margin: auto;
-		padding: 1.5rem 0;
 		text-align: left;
-	}
-	#contact input,
-	#contact textarea,
-	#contact select {
-		width: calc(100% - 1rem);
-		margin: .25rem 0;
-		outline: none;
-		border: 0;
-		border-radius: .25rem;
-		padding: .5rem;
-		font-weight: bold;
-		font-size: 1rem;
 	}
 	#contact label {
 		display: none;
 	}
-	#contact select {
-		width: 100%;
+	#contact input,
+	#contact textarea,
+	#contact select,
+	#contact button{
+		outline: none;
+		border-radius: .3rem;
+		border: 0;
+		padding: .5rem 1rem;
+		font-weight: bold;
+		font-size: 1rem;
 	}
 	#contact textarea {
-		border-radius: .5rem .5rem 0 0;
+		border-radius: .3rem .3rem 0 0;
 		resize: vertical;
 	}
 	#contact button {
-		width: 100%;
-		margin: -.6rem auto;
+		margin: -.5rem 0;
 		border: 2px solid #ccc;
-		border-radius: 0 0 .5rem .5rem;
+		border-radius: 0 0 .3rem .3rem;
 		padding: .5rem;
 		color: #124;
 		background-color: #ccd;
-		font-weight: bold;
-		font-size: 16px;
 	}
 	#contact button:hover {
 		color: #ccc;
