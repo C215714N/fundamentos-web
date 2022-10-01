@@ -56,13 +56,17 @@
 					</p>
 				</header>
 				<p>
+					Una <strong>imagen ráster</strong> es una <em>estructura de datos que representa una rejilla rectangular de puntos de color</em>, denominada matriz, que se puede visualizar en un monitor, papel u otro dispositivo de representación.
 
+					Se las suele definir por su altura y grosor en píxeles y por su profundidad de color en bits por píxel, que determina el número de colores distintos que se pueden almacenar en cada punto individual.
+					
+					Para su obtención se usan dispositivos de <strong>conversión analógica-digital</strong>, tales como escáneres y cámaras digitales.
 				</p>
 				<a href="https://www.iso.org/committee/45316.html" target="_blank" class="article"> 
 					<h4>¿Que es JPG?</h4>
 					<p>
 						<strong>Joint Photographic Expert Group </strong> 
-						es el formato de imagen más común, está especialmente pensado para la compresión de imágenes digitales y fotográficas. No pesan demasiado y es compatible con la mayoría de programas y plataformas. soporta <em>CMYK y RGB, escalas de grises</em> y es capaz de guardar información de más de 16 millones de colores diferentes.
+						es el formato de imagen más común, pensado para la compresión de imágenes digitales y fotográficas. No pesan demasiado y es compatible con la mayoría de programas y plataformas. Soporta <em>CMYK y RGB, escalas de grises</em> y es capaz de guardar más de 16 millones de colores diferentes.
 					</p>
 					<img class="example" src="assets/img/high-sierra.jpg" alt="Imagen Formato JPG">				
 				</a>
@@ -70,7 +74,7 @@
 					<h4>¿Que es PNG?</h4>
 					<p>
 						<strong>Portable Network Graphics </strong> 
-						es un formato de compresion sin perdidas que, a diferencia de JPG que siempre tendrá un fondo de color sólido, soporta transparencias. Es ideal para imágenes sin fondo que contengan texto y logotipos, permitiendo mantener una calidad muy alta. No admite <em>CMYK</em> por lo que no es útil para impresión digital.
+						es un formato de compresion sin perdidas que, a diferencia de JPG, soporta transparencias. Es ideal para imágenes sin fondo que contengan texto y logotipos, permitiendo mantener una calidad muy alta. No admite <em>CMYK</em> por lo que no es útil para impresión digital.
 					</p>
 					<img class="example" src="assets/img/smoke.png" alt="Imagen Formato PNG">
 				</a>
@@ -78,7 +82,7 @@
 					<h4>¿Que es GIF?</h4>
 					<p>
 						<strong>Graphics Interchange Format </strong> 
-						es un formato cuya principal característica es que soporta animaciones, transparencias y paletas de 256 colores, no suele distorsionar la imagen pero sí difumina un poco los colores. Su uso consiste en el movimiento de uno o varios fotogramas alrededor de 3-5 segundos de duración y que se repite de manera infinita.
+						es un formato cuya característica principal es soportar animaciones, transparencias y paletas de 256 colores, no distorsiona la imagen pero difumina un poco los colores. Consiste en el movimiento de uno o varios fotogramas alrededor de unos segundos y que se repite de manera infinita.
 					</p>
 					<img class="example" src="assets/img/love.gif" alt="Imagen Formato GIF">
 				</a>
@@ -94,7 +98,9 @@
 					</p>
 				</header>
 				<p>
-
+					Es una <strong>imagen digital</strong> <em>formada por objetos geométricos dependientes</em> definidos por atributos matemáticos de forma, de posición, etc. El interés principal de los mismos es poder ampliar el tamaño de una imagen a voluntad <em>sin sufrir pérdida de calidad</em>. 
+					
+					De la misma forma, permiten mover, estirar y retorcer imágenes de manera relativamente sencilla. Su uso también está muy extendido en la generación de imágenes en tres dimensiones tanto dinámicas como estáticas.
 				</p>
 				<a href="https://www.ibm.com/ar-es/cloud/databases" target="_blank" class="article">
 					<h4>¿Que es SVG?</h4>
@@ -125,29 +131,40 @@
 					<p class="sub">
 						Sintesis Aditiva
 						<br>
-						<em>(HTML - RGB - HEX)</em>
+						<em>(RGB - HSL - ALPHA)</em>
 					</p>
 				</header>
 				<p>
-					La síntesis aditiva es un modelo que permite explicar la obtención de un color a partir de la suma de los componentes de color. El proceso de reproducción aditiva normalmente utiliza luz roja, verde y azul como componentes para producir el resto de colores.
-				</p>
-				<a href="https://google.com/search?=" class="article">
-					<h4>¿Que son los colores HTML?</h4>
-					<p>
+					Los <strong>colores web</strong> son aquellos que aparecen en una página web y pueden basarse sobre los <em>sistemas de color RGB o HSL</em>. En el código CSS son especificados como valores numéricos, aunque hay colores que también pueden utilizarse por sus nombres en inglés.
 
-					</p>
-				</a>
+					Las pantallas se dividen en puntos <em>minúsculos llamados píxeles</em> formados por <strong>tres subpíxeles de colores primarios de luz</strong>, cada uno de los cuales brilla con una determinada intensidad.
+				</p>
 				<a href="https://google.com/search?=" class="article">
 					<h4>¿Que son los colores RGB?</h4>
 					<p>
-
+						<strong>Proceso de reproducción aditiva</strong> que utiliza <em>luz roja, verde y azul</em> como componentes para producir el resto de colores, puede expresarse tanto en formato DEC y HEX.
 					</p>
+					<div class="header">
+						#112244;
+					</div>
 				</a>
 				<a href="https://google.com/search?=" class="article">
-					<h4>¿Que son los colores HEX?</h4>
+					<h4>¿Que son los colores HSL?</h4>
 					<p>
-
+						<strong>Hue, Saturation and Lightness</strong> es el sistema en el que los colores se miden por tres parámetros que son <em>tono, saturacion y brillo</em> que determinan la posición del color en el cilindro de colores.
 					</p>
+					<div class="header">
+						hsl(220, 60%, 20%);
+					</div>
+				</a>
+				<a href="https://google.com/search?=" class="article">
+					<h4>¿Que es el canal ALPHA?</h4>
+					<p>
+						<strong>El parametro Alpha</strong> determina la opacidad con la que puede mostrarse <em> un color en pantalla usando valores entre 0 y 1.</em> Si se añade a RGB y HSL los convierte en <em>RGBa y HSLa</em>.
+					</p>
+					<div class="header">
+						rgba(17, 34, 68, .9);
+					</div>
 				</a>
 			</section>
 		</article>
