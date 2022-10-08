@@ -25,7 +25,7 @@
 /*Encabezado y Pie de Pagina*/
 	#header,
 	#footer {
-		padding-top: 1.5rem;
+		padding: 1.5rem 0;
 		color: #ccd;
 		background-color: #124;
 		text-align: center;
@@ -45,7 +45,7 @@
 /*Barra de Navegacion*/
 	nav {
 		max-height: 3rem;
-		margin: 10px 0;
+		margin: .5rem 0 -1.5rem;
 		padding: .5rem .5rem 0;
 		background-color: #ccd;
 		overflow: hidden;

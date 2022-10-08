@@ -13,3 +13,4 @@
 		\n charset=utf-8"
 	);
 	header( "location: ../" );
+?>
