@@ -15,6 +15,13 @@
 		margin: 0;
 		padding: 0;
 	}
+	input,
+	textarea,
+	select,
+	button{
+		outline: none;
+		border: none;
+	}
 	hr {
 		border: 1px solid #dedede;
 	}
@@ -35,7 +42,7 @@
 	}
 	#footer iframe {
 		width: 100%;
-		min-height: 240px;
+		min-height: 320px;
 		border: none;
 	}
 	#footer a {
@@ -50,8 +57,13 @@
 		background-color: #ccd;
 		overflow: hidden;
 	}
+	.menu{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: .25rem;
+	}
 	.menu li {
-		display: inline-block;
 		padding: .5rem 1rem;
 		border-radius: .5rem .5rem 0 0;
 		line-height: 2rem;
@@ -63,12 +75,11 @@
 	}
 	/*Tabla de Contenidos*/
 	.index {
-		max-width: 380px;
+		max-width: 420px;
 		margin: 0 auto 1rem;
 		border-radius: 1rem;
 		box-shadow: 5px 5px 10px #ccc, 2.5px 2.5px 10px #ccc inset;
-		padding: 12.5px;
-		list-style: none;
+		padding: .75rem;
 	}
 	.index dt {
 		margin: .25rem -1.5rem;
@@ -76,7 +87,6 @@
 		padding: .5rem 1.5rem;
 		color: #dedede;
 		background-color: #124;
-		font-weight: bold;
 		font-size: 1.5rem;
 	}
 	.index dd {
@@ -87,33 +97,20 @@
 		background-color: #ccd;
 	}
 /*Menu Principal*/
-	article .index-back {
+	.link{
+		display: block;
+		text-align: center;
+	}
+	.index-back,
+	.social-media img {
 		width: 2rem;
 		padding: .5rem;
 		opacity: 0.25;
 	}
-	article .index-back:hover,
-	.link:hover {
+	.index-back:hover,
+	.social-media img:hover {
 		width: 3rem;
 		padding: 0;
-		opacity: 1;
-	}
-	.link {
-		display: block;
-		width: 3rem;
-		height: 3rem;
-		margin: auto;
-	}
-	.link .index-back {
-		width: 2rem;
-		border-radius: 2rem;
-		padding: .5rem;
-		opacity: 0.5;
-	}
-	.link:hover .index-back {
-		width: 3rem;
-		padding: 0;
-		box-shadow: 0 0 8px #ccc;
 		opacity: 1;
 	}
 /*Contenido Principal*/
@@ -129,7 +126,6 @@
 		padding: 0 0 1.5rem;
 		box-shadow: 0 0 .5rem grey;
 		opacity: 0.95;
-		overflow: hidden;
 	}
 	article > header{
 		display: flex;
@@ -199,14 +195,13 @@
 	#contact textarea,
 	#contact select,
 	#contact button{
-		outline: none;
 		border-radius: .3rem;
-		border: 0;
 		padding: .5rem 1rem;
 		font-weight: bold;
 		font-size: 1rem;
 	}
 	#contact textarea {
+		min-height: 4rem;
 		border-radius: .3rem .3rem 0 0;
 		resize: vertical;
 	}
@@ -224,17 +219,16 @@
 	}
 /*Redes Sociales*/
 	.social-media {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: .25rem 0;
 		background-color: #ccd;
-		text-align: center;
 	}
 	.social-media img {
-		height: 2rem;
-		padding: 1rem;
 		opacity: .35;
 	}
 	.social-media a:hover img {
-		height: 3rem;
-		padding: .5rem;
 		opacity: 1;
 	}
 /*Autor: Cristian Racedo*/
