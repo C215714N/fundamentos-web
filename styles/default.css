@@ -62,6 +62,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: .25rem;
+		list-style: none;
 	}
 	.menu li {
 		padding: .5rem 1rem;
